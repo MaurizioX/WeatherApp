@@ -14,12 +14,13 @@ import javax.inject.Inject
 class MainWeatherViewModel @Inject constructor(private val weatherRepository: WeatherRepository) : ViewModel() {
     val weatherLiveData = MutableLiveData<DataUI>().apply { value = Initial }
 
-    fun getWheatherData() {
+    init {
         launch {
             withContext(UI) {
                 weatherLiveData.value = Response(weatherRepository.getWeather("LONDON"))
             }
         }
+
     }
 
 }

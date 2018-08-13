@@ -1,11 +1,105 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+
+        <!-- Original AppCompat attributes. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/my_app_secondary_color</item>
+        <item name="android:colorBackground">@color/my_app_background_color</item>
+        <item name="colorError">@color/my_app_error_color</item>
+
+        <!-- New MaterialComponents attributes. -->
+        <!--<item name="colorPrimaryVariant">@color/my_app_primary_variant_color</item>-->
+        <!--<item name="colorSecondaryVariant">@color/my_app_secondary_variant_color</item>-->
+        <!--<item name="colorSurface">@color/my_app_surface_color</item>-->
+        <!--<item name="colorOnPrimary">@color/my_app_color_on_primary</item>-->
+        <!--<item name="colorOnSecondary">@color/my_app_color_on_secondary</item>-->
+        <!--<item name="colorOnBackground">@color/my_app_color_on_background</item>-->
+        <!--<item name="colorOnError">@color/my_app_color_on_error</item>-->
+        <!--<item name="colorOnSurface">@color/my_app_color_on_surface</item>-->
+        <!--<item name="scrimBackground">@color/mtrl_scrim_color</item>-->
+        <item name="textAppearanceHeadline1">@style/AppTheme.TextAppearanceHeadline1
+        </item>
+        <item name="textAppearanceHeadline2">@style/AppTheme.TextAppearanceHeadline2
+        </item>
+        <item name="textAppearanceHeadline3">@style/AppTheme.TextAppearanceHeadline3
+        </item>
+        <item name="textAppearanceHeadline4">@style/AppTheme.TextAppearanceHeadline4
+        </item>
+        <item name="textAppearanceHeadline5">@style/AppTheme.TextAppearanceHeadline5
+        </item>
+        <item name="textAppearanceHeadline6">@style/AppTheme.TextAppearanceHeadline6
+        </item>
+        <item name="textAppearanceSubtitle1">@style/AppTheme.TextAppearanceSubtitle1
+        </item>
+        <item name="textAppearanceSubtitle2">@style/AppTheme.TextAppearanceSubtitle2
+        </item>
+        <item name="textAppearanceBody1">@style/AppTheme.TextAppearanceBody1</item>
+        <item name="textAppearanceBody2">@style/AppTheme.TextAppearanceBody1</item>
+        <item name="textAppearanceCaption">@style/AppTheme.TextAppearanceCaption</item>
+        <item name="textAppearanceButton">@style/AppTheme.TextAppearanceButton</item>
+        <item name="textAppearanceOverline">@style/AppTheme.TextAppearanceOverline</item>
     </style>
 
+    <style name="AppTheme.TextAppearanceHeadline1" parent="@style/TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceHeadline2" parent="@style/TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceHeadline3" parent="@style/TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceHeadline4" parent="@style/TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceHeadline5" parent="@style/TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceHeadline6" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceSubtitle1" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceSubtitle2" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceBody1" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceBody2" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceCaption" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceButton" parent="@style/TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <style name="AppTheme.TextAppearanceOverline" parent="@style/TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/advent_pro_thin</item>
+    </style>
+
+    <color name="my_app_secondary_color">#FF0000</color>
+    <color name="my_app_background_color">#e0ece0</color>
+    <color name="my_app_error_color">#0000ff</color>
 </resources>
