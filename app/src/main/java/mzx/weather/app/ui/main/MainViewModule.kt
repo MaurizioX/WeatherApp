@@ -1,4 +1,4 @@
-package mzx.weather.app.main
+package mzx.weather.app.ui.main
 
 import androidx.lifecycle.ViewModel
 import dagger.Binds

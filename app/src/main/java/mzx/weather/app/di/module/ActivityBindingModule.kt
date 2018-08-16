@@ -3,8 +3,8 @@ package mzx.weather.app.di.module
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import mzx.weather.app.di.ActivityScope
-import mzx.weather.app.main.MainViewModule
-import mzx.weather.app.main.MainWeatherActivity
+import mzx.weather.app.ui.main.MainViewModule
+import mzx.weather.app.ui.main.MainWeatherActivity
 
 @Module
 abstract class ActivityBindingModule {

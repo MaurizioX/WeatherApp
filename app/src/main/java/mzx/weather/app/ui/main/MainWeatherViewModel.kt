@@ -1,4 +1,4 @@
-package mzx.weather.app.main
+package mzx.weather.app.ui.main
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -15,8 +15,8 @@ class MainWeatherViewModel @Inject constructor(private val weatherRepository: We
     val weatherLiveData = MutableLiveData<DataUI>().apply { value = Initial }
 
     init {
-        launch {
-            withContext(UI) {
+        val job = launch {
+            val asd = withContext(UI) {
                 weatherLiveData.value = Response(weatherRepository.getWeather("LONDON"))
             }
         }
