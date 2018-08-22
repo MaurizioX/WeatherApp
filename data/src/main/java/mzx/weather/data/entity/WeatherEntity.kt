@@ -47,5 +47,29 @@ data class MainEntity(val temp: Double = 0.0,
                       val pressure: Int = 0,
                       val tempMax: Double = 0.0)
 
+data class ForecastEntity(val city: CityEntity,
+                          val cnt: Int = 0,
+                          val cod: String = "",
+                          val message: Double = 0.0,
+                          val list: List<ListItemEntity>?)
+
+data class ListItemEntity(
+        val dt: Int = 0,
+        val dtTxt: String = "",
+        val snow: SnowEntity?,
+        val weather: List<WeatherItemEntity>?,
+        val main: MainEntity,
+        val clouds: CloudsEntity,
+        val sys: SysEntity,
+        val wind: WindEntity, val rain: SnowEntity?)
+
+data class SnowEntity(val snow: Double?)
+
+data class CityEntity(val country: String = "",
+                      val coord: CoordEntity,
+                      val name: String = "",
+                      val id: Int = 0,
+                      val population: Int?)
+
 
 

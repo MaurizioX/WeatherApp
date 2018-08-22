@@ -66,7 +66,8 @@ data class SysJson(@JsonProperty("country")
                    @JsonProperty("type")
                    val type: Int = 0,
                    @JsonProperty("message")
-                   val message: Double = 0.0)
+                   val message: Double = 0.0,
+                   @JsonProperty("pod") val pod: String?)
 
 
 data class MainJson(@JsonProperty("temp")
@@ -78,6 +79,9 @@ data class MainJson(@JsonProperty("temp")
                     @JsonProperty("pressure")
                     val pressure: Int = 0,
                     @JsonProperty("temp_max")
-                    val tempMax: Double = 0.0)
+                    val tempMax: Double = 0.0,
+                    @JsonProperty("grnd_level") val grndLevel: Double,
+                    @JsonProperty("sea_level") val seaLevel: Double,
+                    @JsonProperty("temp_kf") val tempKf: Double)
 
 
